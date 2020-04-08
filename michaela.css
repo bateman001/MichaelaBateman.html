@@ -1,5 +1,307 @@
 @charset "UTF-8";
 /* CSS Document */
+
+@media screen and (max-width: 799px){
+	@font-face{
+	font-family: header;
+	src:url("style/rocket_wildness/ROCKET WILDNESS.woff");
+}
+
+@font-face{
+	font-family: paragraph;
+	src: url("style/Kiona/fonts/Kiona-Regular.woff");
+}
+
+*{
+	box-sizing: border-box;
+}
+	
+a{
+	text-decoration: none;
+	color: black;
+	transition-duration: 0.4;
+}
+
+a:hover{
+	color: white;
+}
+
+.second-screen{
+	display: none;
+}
+
+.glow{
+	color:#fff;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+     animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+body{
+	margin: 0;
+	background-color: black;
+}
+
+
+h1{
+	color: white;
+	font-family: header;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	color: white;
+	font-family: paragraph;
+	font-size: 30px;
+}
+
+main{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+
+main h1{
+	font-size: 80px;
+}
+
+.reel{
+	flex-direction: column;
+	align-items: center; 
+	text-align: center;
+}
+
+li{
+	font-family: paragraph;
+	font-size: 30px;
+	width: 300px;
+	color: white;
+	list-style: none;
+	text-align: left;
+}
+
+
+.js-power{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+
+}
+
+#welcome, #note{
+	position: absolute;
+	top: 35%;
+	display: none;
+	color: white;
+	text-align: center;
+
+}
+
+
+p{
+	font-size: 20px;
+	color: white;
+	font-family: paragraph;
+	text-align: center;
+}
+
+#js-play{
+	width: 30%;
+	margin-top: 20%;
+	text-decoration: none;
+	background: transparent;
+	transition: transform .3s;
+	border: none;
+}
+
+#js-play:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+    position:relative;
+
+}
+
+
+.content{
+	
+	display: none;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#whoIamTitle, .reel, .bio{
+	display: none;
+}
+
+#whoIamTitle{
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.bio, .reel{
+	margin-top: 0;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+::placeholder{
+	color: black;
+}
+
+	legend{
+		font-family: paragraph;
+		font-size: 30px;
+		color: white;
+		margin-bottom: 5%;
+	}
+	
+input{
+	width: 50%;	
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 15px;
+	background-color: #666;
+	border: none;
+}
+
+label{
+	font-family: paragraph;
+	font-size: 20px;
+	color: white;
+	margin-top: 10px;
+}
+
+#submit-form{
+	align-self: center;
+	display: none;
+	font-size: 20px;
+	padding: 10px;
+	width: 20%;
+	font-family: paragraph;
+	background-color: #666;
+	border: none;
+	transition: .5s;
+	margin-top: 5%;
+	text-align: center;
+}
+
+#show-form{
+	display: none;
+}
+
+
+#submit-form:before{
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+#submit-form:hover:before{
+	
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+  filter: blur(3px);
+}
+
+#submit-form:hover{
+  cursor: pointer;
+  color: #DE25EB;
+  box-shadow: 0px 0px 15px #DE25EB;
+  text-shadow: 0px 0px 15px #DE25EB;
+}
+
+.portfolio{
+	display: none;
+	margin-top: 20%;
+}
+
+.portfolio h1{
+	font-size: 80px;
+	margin-bottom: 10%;
+}
+
+.images{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.picture{
+	width: 80%;
+	text-align: center;
+	background-color: black;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 0;
+}
+
+.picture a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+
+footer{
+	margin-top: 10%;
+	padding: 0;
+	flex-direction: column;
+	align-content: center;
+	display: none;
+	
+}
+
+.flex-center{
+	position: absolute;
+	display: none;
+	justify-content: space-around;
+	left: 25%;
+	height: 10vh;
+	width: 50%;
+}
+
+.icon-3d {
+  padding: 5px;
+  color: white;
+ }
+
+
+	
+	
+	
+}
+@media screen and (min-width: 800px){
+	
+
 @font-face{
 	font-family: header;
 	src:url("style/rocket_wildness/ROCKET WILDNESS.woff");
@@ -180,6 +482,10 @@ form{
 	color: black;
 }
 
+legend{
+	display: none;
+	}
+	
 input{
 	width: 50%;	
 	padding: 10px;
@@ -334,4 +640,6 @@ footer{
   100% {
     text-shadow: -5px 0 #DE25EB, 5px -4px #e60073;
   }
+}
+
 }

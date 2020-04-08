@@ -10,7 +10,7 @@ $("#js-play").on("click", function(e){
 	setTimeout(welcomeFade, 1000);
 	setTimeout(noteFade, 5000);
 	setTimeout(contentArrive, 10000)
-				
+
 });
 	
 function welcomeFade(){
@@ -33,9 +33,31 @@ function contentArrive(){
 	$(".content").css("display", "flex");
 	$("#whoIamTitle").css("display", "inline");
 	$(".reel").css("display", "flex");
+	
+	if($(window).width() >= 800){
+		
 	showText("ul", ME, 0, 1000 );
 	setTimeout(showBio, 5000);
 	setTimeout(showrest, 1000);
+
+	}
+	else{
+		showAll(ME);
+	}
+	
+}
+
+function showAll(arr){
+	
+	for(let i = 0; i < arr.length; i++){
+		let item = `#li${i + 1}`;
+		$("ul").find(item).html(arr[i]);
+	}
+	
+	showBio();
+	showrest();
+	$("form").show();
+	$("#submit-form").css("display", "block");
 }
 
 function showBio(){
