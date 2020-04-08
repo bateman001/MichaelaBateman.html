@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="michaela.css">
+<!--<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">-->
+<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>MY WEBSITE</title>
+</head>
+<body>
+
+<div class="js-power">
+	<!--power button intro-->
+	<input type="image" id="js-play" src="img/powerbuttoncrop.png" alt="power button">
+	
+	<!--After press power button a welcome will appear -->
+	<h1 id="welcome" class="glow">Welcome</h1>
+	<p id="note">I'm glad you're here</p>
+	<!-- welcome disappears showing my main screen-->
+</div>
+	
+<main class="content">
+	
+	<h1 id="whoIamTitle" class="glow">Who I am</h1>
+	
+	<div class="reel">
+		
+	<ul>
+		<li id="li1"></li>
+		<li id="li2"></li>
+		<li id="li3"></li>
+	</ul>
+		
+	</div>
+	
+	<p class="bio">I am a highly motivated full stack developer.<br> I would make a great addition to your team.</p>
+
+</main>
+	
+<div class="portfolio">
+	<h1 class="glow">Portfolio</h1>
+
+<main class="images">
+	<div class="picture">
+		<h2><a href="#">Musician Landing Page</a></h2>
+	<img src="img/brentsite.png" alt="brents website" >
+	</div>
+	
+	<div class="picture">
+		<h2><a href="#">Bakery Website</a></h2>
+	<img src="img/brynssite.png" alt="bryns website" >
+	</div>
+
+	<div class="picture">
+		<h2><a href="#">Hip Hop Quiz</a></h2>
+	<img src="img/hiphopquiz.png" alt="quiz app" >
+	</div>
+
+
+</main>
+</div>
+	
+<footer>
+	
+<button type="button" id="show-form">Hire Me</button>
+	
+<form class="contact">
+	
+<label for="fname">First Name</label>
+<input type="text" id="fname" placeholder="Bill">
+	
+<label for="lname">Last Name</label>
+<input type="text" id="lname" placeholder="Gates">
+	
+<label for="company">Company</label>
+<input type="text" id="company" placeholder="Microsoft">
+	
+<label for="fname">Email</label>
+<input type="email" id="email" placeholder="billgates@microsoft.com">
+
+</form>	
+	
+<button type="submit" id="submit-form">submit</button>
+	
+</footer>
+
+<div class="flex-center">
+  <i class="fa fa-linkedin fa-4x icon-3d"></i>
+  <i class="fa fa-github fa-4x icon-3d"></i>
+  <i class="fa fa-google fa-4x icon-3d"></i>
+</div>
+	
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+
+<script src="main.js"></script>
+</html>
