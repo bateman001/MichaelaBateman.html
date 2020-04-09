@@ -7,9 +7,15 @@
 }
 
 @font-face{
-	font-family: paragraph;
+	font-family: header2;
 	src: url("style/Kiona/fonts/Kiona-Regular.woff");
 }
+
+
+@font-face{
+		font-family: paragraph;
+		src: url("style/Adam-Medium/fonts/Adam-Medium.woff");
+	}
 
 *{
 	box-sizing: border-box;
@@ -62,7 +68,7 @@ h1{
 
 h2{
 	color: white;
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 20px;
 }
 
@@ -82,9 +88,13 @@ main h1{
 	align-items: center; 
 	text-align: center;
 }
+	
+	nav{
+		display: none;
+	}
 
 li{
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 20px;
 	width: 300px;
 	color: white;
@@ -138,7 +148,6 @@ p{
 
 
 .content{
-	
 	display: none;
 	flex-direction: column;
 	text-align: center;
@@ -161,6 +170,7 @@ p{
 	text-align: center;
 }
 
+
 form{
 	display: flex;
 	flex-direction: column;
@@ -172,7 +182,7 @@ form{
 }
 
 	legend{
-		font-family: paragraph;
+		font-family: header2;
 		font-size: 20px;
 		color: white;
 		margin-bottom: 5%;
@@ -188,7 +198,7 @@ input{
 }
 
 label{
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 15px;
 	color: white;
 	margin-top: 10px;
@@ -200,7 +210,7 @@ label{
 	font-size: 15px;
 	padding: 10px;
 	width: 20%;
-	font-family: paragraph;
+	font-family: header2;
 	background-color: #666;
 	border: none;
 	transition: .5s;
@@ -290,6 +300,7 @@ footer{
 	left: 25%;
 	height: 10vh;
 	width: 50%;
+	margin-top: 5%;
 }
 
 .icon-3d {
@@ -311,9 +322,15 @@ footer{
 }
 
 @font-face{
-	font-family: paragraph;
+	font-family: header2;
 	src: url("style/Kiona/fonts/Kiona-Regular.woff");
 }
+
+
+@font-face{
+		font-family: paragraph;
+		src: url("style/Adam-Medium/fonts/Adam-Medium.woff");
+	}
 
 *{
 	box-sizing: border-box;
@@ -366,7 +383,7 @@ h1{
 
 h2{
 	color: white;
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 30px;
 }
 
@@ -387,8 +404,12 @@ main h1{
 	text-align: center;
 }
 
+	nav{
+		display: none;
+	}
+
 li{
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 30px;
 	width: 300px;
 	color: white;
@@ -476,7 +497,7 @@ form{
 }
 
 	legend{
-		font-family: paragraph;
+		font-family: header2;
 		font-size: 30px;
 		color: white;
 		margin-bottom: 5%;
@@ -492,7 +513,7 @@ input{
 }
 
 label{
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 20px;
 	color: white;
 	margin-top: 10px;
@@ -504,7 +525,7 @@ label{
 	font-size: 20px;
 	padding: 10px;
 	width: 20%;
-	font-family: paragraph;
+	font-family: header2;
 	background-color: #666;
 	border: none;
 	transition: .5s;
@@ -594,6 +615,7 @@ footer{
 	left: 25%;
 	height: 10vh;
 	width: 50%;
+	margin-top: 5%;
 }
 
 .icon-3d {
@@ -606,6 +628,7 @@ footer{
 	
 	
 }
+
 @media screen and (min-width: 800px){
 	
 
@@ -615,13 +638,19 @@ footer{
 }
 
 @font-face{
-	font-family: paragraph;
+	font-family: header2;
 	src: url("style/Kiona/fonts/Kiona-Regular.woff");
 }
+
+@font-face{
+		font-family: paragraph;
+		src: url("style/Adam-Medium/fonts/Adam-Medium.woff");
+	}
 
 *{
 	box-sizing: border-box;
 }
+	
 a{
 	text-decoration: none;
 	color: black;
@@ -669,7 +698,7 @@ h1{
 
 h2{
 	color: white;
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 30px;
 }
 
@@ -683,6 +712,25 @@ main{
 main h1{
 	font-size: 100px;
 }
+	
+nav ul{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 5%;
+	border: 1px solid white;
+}
+	
+	nav ul li{
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-align: center;
+		padding-left: 0;
+		padding-right: 0;
+		color: white;
+	}
+	nav ul li a{
+		color: white;
+	}
 
 .reel{
 	flex-direction: column;
@@ -691,7 +739,7 @@ main h1{
 }
 
 li{
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 30px;
 	width: 300px;
 	color: white;
@@ -707,7 +755,7 @@ li{
 	align-items: center;
 	justify-content: center;
 	font-size: 80px;
-
+	
 }
 
 #welcome, #note{
@@ -753,13 +801,16 @@ p{
     }
 
 .content{
-	
 	height: 100vh;
 	display: none;
-	flex-direction: column;
 	text-align: center;
 	margin-top: 0;
 	margin-bottom: 0;
+	background-image: url("img/nebula.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
 }
 
 #whoIamTitle, .reel, .bio{
@@ -771,11 +822,24 @@ p{
 	margin-bottom: 5%;
 }
 
+.flex-box{
+	margin: 10% auto 5% auto;
+	display: flex;
+		
+}
 .bio, .reel{
 	margin-top: 0;
-	margin-bottom: 5%;
-	text-align: center;
-}
+	margin-bottom: 0;
+	width: 50%;
+	}
+
+	.reel li{
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+.bio p{
+		text-align: left;
+	}
 
 form{
 	display: flex;
@@ -803,7 +867,7 @@ input{
 }
 
 label{
-	font-family: paragraph;
+	font-family: header2;
 	font-size: 20px;
 	color: white;
 	margin-top: 10px;
@@ -829,26 +893,26 @@ label{
 }
 
 #show-form, #submit-form{
-	font-family: paragraph;
+	font-family: header2;
 	background-color: #666;
 	border: none;
 	transition: .5s;
 }
 
-#show-form:before, #submit-form:before{
+nav ul li:before, #show-form:before, #submit-form:before{
   transition: .5s;
   transform: scale(.9);
   z-index: -1;
 }
 
-#show-form:hover:before, #submit-form:hover:before{
+nav ul li:hover:before, #show-form:hover:before, #submit-form:hover:before{
 	
   transform: scale(1.2);
   box-shadow: 0 0 15px #d35400;
   filter: blur(3px);
 }
 
-#show-form:hover, #submit-form:hover{
+nav ul li:hover, #show-form:hover, #submit-form:hover{
   cursor: pointer;
   color: #DE25EB;
   box-shadow: 0px 0px 15px #DE25EB;
@@ -858,7 +922,6 @@ label{
 .portfolio{
 	height: 100vh;
 	display: none;
-	margin-top: 20%;
 }
 
 .portfolio h1{
@@ -921,6 +984,7 @@ footer{
 	left: 25%;
 	height: 10vh;
 	width: 50%;
+	margin-top: 5%;
 }
 
 .icon-3d {

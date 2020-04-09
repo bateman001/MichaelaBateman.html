@@ -30,7 +30,8 @@ function showText(target, msg, index, interval){
 }
 
 function contentArrive(){
-	$(".content").css("display", "flex");
+	
+	$(".content").css("display", "block");
 	$("#whoIamTitle").css("display", "inline");
 	$(".reel").css("display", "flex");
 	
